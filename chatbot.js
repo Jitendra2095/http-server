@@ -1,6 +1,7 @@
 (function () {
  // Retrieve the chatbotId from the global window object
  var chatbotId = window.chatbotId || "default"; 
+ var allowedDomain = window.allowedDomain || "";
 
  // Ensure the chatbotId exists
  if (!chatbotId) {
@@ -9,16 +10,16 @@
  }
 
  // Extract the current domain from the website
- //var currentDomain = window.location.hostname;
+ var currentDomain = window.location.hostname;
 
  // Validate if the bot ID matches the expected domain (based on the logic you used to generate botId)
  // Assuming the bot ID is generated from the domain using the same logic as in the frontend.
 // var domainFromBotId = atob(chatbotId.replace("bot-", ""));
 
- // if (!currentDomain.includes(domainFromBotId)) {
- //   console.error("Domain mismatch: the chatbot cannot be initialized for this domain.");
- //   return;
- // }
+ if (!currentDomain.includes(domainFromBotId)) {
+   console.error("Domain mismatch: the chatbot cannot be initialized for this domain.");
+   return;
+ }
 // Add Google Fonts link for Roboto to the document head
 var fontLink = document.createElement('link');
 fontLink.rel = 'stylesheet';
