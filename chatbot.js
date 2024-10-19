@@ -15,7 +15,13 @@
  // Validate if the bot ID matches the expected domain (based on the logic you used to generate botId)
  // Assuming the bot ID is generated from the domain using the same logic as in the frontend.
 // var domainFromBotId = atob(chatbotId.replace("bot-", ""));
-
+// Extract the domain from the botId (reverse the base64 encoding)
+  try {
+    var domainFromBotId = atob(chatbotId.replace("bot-", ""));
+  } catch (error) {
+    console.error("Error decoding chatbot ID:", error);
+    return;
+  }
  if (!currentDomain.includes(domainFromBotId)) {
    console.error("Domain mismatch: the chatbot cannot be initialized for this domain.");
    return;
