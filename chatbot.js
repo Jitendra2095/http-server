@@ -76,7 +76,7 @@ document.head.appendChild(style);
   botIcon.style.width = '61px';
   botIcon.style.height = '62px';
   botIcon.style.borderRadius = '100%';
-  botIcon.style.backgroundImage = 'url("http://localhost:8080/botIcon.svg")';  // Replace with correct absolute URL or relative path
+  botIcon.style.backgroundImage = 'url("https://jade-sawine-353d8b.netlify.app/botIcon.svg")';  // Replace with correct absolute URL or relative path
   botIcon.style.backgroundSize = 'cover';
   botIcon.style.cursor = 'pointer';
   botIcon.style.zIndex = '1001';
@@ -117,7 +117,7 @@ document.head.appendChild(style);
   headerTextContainer.style.alignItems = 'center';
 
   var headerImage = document.createElement('img');
-  headerImage.src = "http://localhost:8080/botIconWhite.svg"; // Replace with correct absolute URL or relative path
+  headerImage.src = "https://jade-sawine-353d8b.netlify.app/botIconWhite.svg"; // Replace with correct absolute URL or relative path
   headerImage.alt = 'botIcon';
   headerImage.style.height = '45px';
   headerImage.style.width = '45px';
@@ -259,13 +259,13 @@ document.head.appendChild(style);
   addIconBtn.style.padding = '0px';
   addIconBtn.style.border = 'none';
   addIconBtn.style.cursor = 'pointer';
-  addIconBtn.innerHTML = '<img src="http://localhost:8080/AddIcon.svg" alt="AddIcon">';  // Replace with correct absolute URL or relative path
+  addIconBtn.innerHTML = '<img src="https://jade-sawine-353d8b.netlify.app/AddIcon.svg" alt="AddIcon">';  // Replace with correct absolute URL or relative path
 
   var imageIconBtn = document.createElement('button');
   imageIconBtn.style.padding = '0px';
   imageIconBtn.style.border = 'none';
   imageIconBtn.style.cursor = 'pointer';
-  imageIconBtn.innerHTML = '<img src="http://localhost:8080/ImageIcon.svg" alt="ImageIcon">';  // Replace with correct absolute URL or relative path
+  imageIconBtn.innerHTML = '<img src="https://jade-sawine-353d8b.netlify.app/ImageIcon.svg" alt="ImageIcon">';  // Replace with correct absolute URL or relative path
 
   var inputBox = document.createElement('input');
   inputBox.type = 'text';
